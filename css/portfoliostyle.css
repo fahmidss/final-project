@@ -1,0 +1,180 @@
+:root {
+    --main-bg-color: #FDFBF7;
+    
+    --red-color: #AF3743;
+    --pink-color: #C58398;
+    --black-color: #1E1E1E;
+    --greenblue-color: #42615B;
+    --gray-color: #595959;
+    --pistachio: #C9C786;
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: #15334d;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    transition: top 0.3s ease; 
+}
+
+.skip-to-main:focus,
+.skip-to-main:active {
+    top: 0;
+}
+
+.top {
+    padding-top: 200px;
+    margin-bottom: 200px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    background-color: var(--pistachio);
+    padding-bottom: 150px;;
+}
+
+.top h3 {
+    color: var(--red-color);
+    font-family: "marine-oblicua", sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+}
+
+.top p {
+    font-size: 48px;
+    font-family: "marine", sans-serif;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+
+.project-info {
+    height: auto;
+    width: 100%;
+    background-color: #F7F2EA;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    margin-top: -25px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: -100px
+}
+
+/* overview */
+
+.overview {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 200px 50px 200px;
+    gap: 100px;
+}
+.summary {
+    max-width: 500px;
+}
+.summary h2 {
+    color: var(--gray-color);
+}
+.stuff h2 {
+    color: var(--red-color)
+}
+.summary, .stuff p {
+    font-family: "marine", sans-serif;
+    font-weight: 600;
+    color: var(--gray-color);
+    font-size: 18px;
+
+}
+
+/* objective */
+.objective h2 {
+    background-color: #E4DAB7;
+    text-align: center;
+    color: var(--gray-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.objective h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 16px;
+}
+.objective p{
+    padding: 50px 200px 50px 200px;
+    text-align: center;
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 16px;
+}
+.objective ul li {
+    display: list-item;
+    margin-left: 20px;
+    list-style-type: disc;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.research-phase, .design-phase, .guidelines, .implementation-phase, .takeaways, .check {
+    padding: 50px 100px;
+}
+.research-phase h2,
+.design-phase h2,
+.implementation-phase h2,
+.takeaways h2,
+.check h2 {
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 32px;
+}
+.research-phase p,
+.design-phase p,
+.implementation-phase p {
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 16px;
+}
+.design-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 40px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.design-grid p {
+    align-self: start;
+}
+.design-grid img {
+    min-width: 100;
+    min-height: 100;
+}
+.design-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+}
+.guidelines h3, .implementation-phase h3 {
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+    color: var(--gray-color);
+    font-size: 24px;
+}
+

@@ -2,7 +2,7 @@
     --main-bg-color: #FDFBF7;
     
     --red-color: #AF3743;
-    --pink-color: #C58398;
+    --pink-color: #905c6c;
     --black-color: #1E1E1E;
     --greenblue-color: #42615B;
     --gray-color: #595959;
@@ -84,6 +84,11 @@ li a {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+li a:hover {
+    color: #ed4c5c;
+
 }
 
 img.logo {
@@ -210,7 +215,7 @@ img.gif {
     line-height: 1.5;
     padding: 40px
 }
-.cs-right h3 {
+.cs-right h2 {
     color: var(--red-color);
     font-size: 60px;
     font-weight: 700;
@@ -264,4 +269,37 @@ img.gif {
     transition: transform 400ms;
     transform: translateY(-10px);
     box-shadow: rgb(155, 163, 125, 0.3) 0px 1px 2px 0px, rgb(155, 163, 125, 0.15) 0px 2px 6px 2px;
+}
+
+.row {
+    display: grid; 
+    column-gap: 80px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 40px 50px;
+}
+.footer {
+    background: var(--pink-color);
+    color: white;
+}
+.hyperlinks {
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    text-align: right;
+}
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+.links ul li a {
+    color: white;
+    transition: color .2s;
+    margin: 0;
+    padding: 0;
+}
+.links ul li a:hover {
+    text-decoration: none;
+    color: #4180CB;
 }

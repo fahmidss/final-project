@@ -7,6 +7,7 @@
     --greenblue-color: #42615B;
     --gray-color: #595959;
     --pistachio: #C9C786;
+    --ssblue: #75A1B5;
 }
 
 *, *:before, *:after {
@@ -31,49 +32,13 @@
     top: 0;
 }
 
-#main {
+html {
     background-color: var(--main-bg-color);
 }
-nav {
-    width: auto;
-}
 
-.top {
-    padding-top: 200px;
-    margin-bottom: 200px;
-    margin-bottom: 0px;
-    padding-left: 50px;
-    background-color: var(--pistachio);
-    padding-bottom: 150px;
-    width: auto;
-}
-.top h1 {
-    color: var(--red-color);
-    font-family: "marine-oblicua", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    margin-bottom: 0;
-    text-align: left;
-}
-
-.top p {
-    font-size: 24px;
-    font-family: "marine", sans-serif;
-    font-weight: 600;
-    color: var(--gray-color);
-}
-
-.project-info {
+.top img {
+    max-width: 100%;
     height: auto;
-    width: 100%;
-    background-color: var(--main-bg-color);
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    margin-top: -25px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    margin-bottom: -100px
 }
 
 /* overview */
@@ -92,7 +57,7 @@ nav {
     font-size: 24px;
 }
 .stuff h2 {
-    color: var(--red-color);
+    color: var(--ssblue);
     font-size: 24px;
 }
 .summary, .stuff p {
@@ -143,58 +108,23 @@ nav {
 }
 
 .research-phase p,
-    .design-phase p,
-    .implementation-phase p,
-    .list-row p,
-    .takeaways p {
-        font-family: "marine", sans-serif;
-        font-weight: 700;
-        color: var(--gray-color);
-        font-size: 14px;
-}
-
-.key-points h2 {
-    color: var(--red-color);
-    font-family: "marine", sans-serif;
-}
-
-.design-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-}
-.logo, .figma, .time {
-    width: 50px;
-}
-
-.design-grid p {
-    align-self: start;
-}
-
-.design-photos {
-    display: grid;
-    grid-template-columns: 1fr;
-    
-}
-.proj {
-    width: auto;
-}
-.other-projs img, .logo, .figma, .time {
-    max-width: 200px;
-}
-
-.sketch, .sketch2 {
-    width: 370px;
-}
-
-.guidelines h3, .implementation-phase h3, .challenges h3 {
+.design-phase p,
+.implementation-phase p,
+.list-row p,
+.takeaways p {
     font-family: "marine", sans-serif;
     font-weight: 700;
     color: var(--gray-color);
-    font-size: 21px;
+    font-size: 14px;
+}
+
+.key-points h2 {
+    color: var(--ssblue);
+    font-family: "marine", sans-serif;
+}
+
+.key-points p {
+    padding-bottom: 20px;
 }
 
 .list {
@@ -212,70 +142,29 @@ nav {
     align-content: center;
 }
 
-
-/* tablet view */
-@media (min-width: 600px) {
-    .overview {
-        display: flex;
-        flex-direction: row;
-        padding: 20px 30px;
-        gap: 50px;
-    }
-
-    .summary, .stuff p {
-        font-family: "marine", sans-serif;
-        font-weight: 600;
-        color: var(--gray-color);
-        font-size: 18px;
-    }
-    .objective p {
-        padding: 10px 20px;
-        text-align: center;
-        font-family: "marine", sans-serif;
-        font-weight: 700;
-        color: var(--gray-color);
-        font-size: 18px;
-    }
-    .research-phase p,
-    .design-phase p,
-    .implementation-phase p,
-    .list-row p,
-    .takeaways p {
-        font-family: "marine", sans-serif;
-        font-weight: 700;
-        color: var(--gray-color);
-        font-size: 18px;
-    }
-    .logo, .figma, .time {
-        width: 75px;
-    }
-    .sketch, .sketch2 {
-        width: 580px;
-    }
+.sketch {
+    width: 400px;
 }
 
+.row {
+    display: grid; 
+    column-gap: 50px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 20px 30px;
+}
+
+@media (min-width: 600px) {
+    .overview {
+        gap: 60px;
+    }
+    
+}
+
+
 @media (min-width: 900px) {
-    .top {
-        padding-top: 200px;
-        margin-bottom: 200px;
-        margin-bottom: 0px;
-        padding-left: 50px;
-        background-color: var(--pistachio);
-        padding-bottom: 150px;;
-    }
-    
-    .top h1 {
-        color: var(--red-color);
-        font-family: "marine-oblicua", sans-serif;
-        font-weight: 700;
-        font-size: 84px;
-    }
-    
-    .top p {
-        font-size: 48px;
-        font-family: "marine", sans-serif;
-        font-weight: 600;
-        color: var(--gray-color);
+    .top img {
+        width: 1430px;
     }
     
     .project-info {
@@ -306,7 +195,7 @@ nav {
         color: var(--gray-color);
     }
     .stuff h2 {
-        color: var(--red-color)
+        color: var(--ssblue)
     }
     .summary, .stuff p {
         font-family: "marine", sans-serif;
@@ -333,9 +222,9 @@ nav {
         color: var(--gray-color);
         font-size: 16px;
     }
-    .objective p {
+    .objective p{
         padding: 50px 200px 50px 200px;
-        text-align: center;
+        text-align: left;
         font-family: "marine", sans-serif;
         font-weight: 700;
         color: var(--gray-color);
@@ -428,7 +317,7 @@ nav {
         text-align: center;
     }
     .key-points h2 {
-        color: var(--red-color);
+        color: var(--ssblue);
         font-family: "marine", sans-serif;
     }
     

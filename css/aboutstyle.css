@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--main-bg-color);
 }
 
 *, *:before, *:after {
@@ -34,48 +35,191 @@ html {
     top: 0;
 }
 
-p {
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
     font-family: "marine", sans-serif;
+    min-height: 50px;
+    background-color: #F3E9C8;
 }
-h1 {
+.nav-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+li {
+    display: inline-block;
+    font-weight: 500;
+}
+
+li a {
+    margin-left: 20px;
+    color: #AF3743;
     font-family: "marine", sans-serif;
     font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li a:hover {
+    color: #ed4c5c;
 
 }
-.top-page {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; 
-    background: #F7F2EA;
+
+img.logo {
+    min-width: 80px;
+    min-height: 50px;
 }
-.top {
-    margin-bottom: 100px;
-    margin-top: 200px;
-    background-color: var(--pistachio);
-    padding-bottom: 150px;;
+
+.about-top img {
+    min-width: 408px;
+    width: 100%;
+    height: auto;
 }
-.about-top {
+.carousel-container img {
+    width: 200px;
     text-align: center;
-    padding-top: 100px;
 }
-.about-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-.intro {
-    padding-left: 275px;
-    padding-right: 275px;
-}
-.highlight {
-    color: var(--red-color);
-}
-
 .carousel-container, .buttons-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.about-top h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.intro p {
+    padding: 20px;
+    font-family: "marine", sans-serif;
+}
+.highlight {
+    color: var(--red-color);
+    font-family: "marine", sans-serif;
+    font-weight: 700;
+}
+
+.row {
+    display: grid; 
+    column-gap: 50px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding: 20px 30px;
+    width: 100%;
+}
+.footer {
+    background: var(--pink-color);
+    color: white;
+}
+.hyperlinks {
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    text-align: right;
+}
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+.links ul li a {
+    color: white;
+    transition: color .2s;
+    margin: 0;
+    padding: 0;
+}
+.links ul li a:hover {
+    text-decoration: none;
+    color: #4180CB;
+}
+
+@media (min-width: 600px) {
+    .carousel-container img {
+        width: 400px;
+        text-align: center;
+    }
+    .carousel-container, .buttons-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 900px) {
+    p {
+        font-family: "marine", sans-serif;
+    }
+    h1 {
+        font-family: "marine", sans-serif;
+        font-weight: 700;
+    
+    }
+    .top-page {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        height: 100vh; 
+        background: #F7F2EA;
+    }
+    .top {
+        margin-bottom: 100px;
+        margin-top: 200px;
+        background-color: var(--pistachio);
+        padding-bottom: 150px;;
+    }
+    .about-top {
+        text-align: center;
+        padding-top: 100px;
+    }
+    .about-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .intro {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
+    .highlight {
+        color: var(--red-color);
+        font-family: "marine", sans-serif;
+        font-weight: 700;
+    }
+    
+    .intro p {
+        margin-top: 40px;
+    }
+    
+    .carousel-container, .buttons-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .carousel-container img {
+        width: 500px; 
+        max-height: 500px; 
+    }
 }
